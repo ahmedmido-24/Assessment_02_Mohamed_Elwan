@@ -1,45 +1,57 @@
-Assignment 3 – Node.js
-Overview
+# 📘 Assignment 2 – Node.js
 
-This assignment demonstrates the use of Node.js core modules, HTTP CRUD APIs, and an understanding of Node.js internals.
-All tasks are implemented using pure Node.js without external frameworks.
+---
 
-Part 1: Streams
+## 🔍 Overview
 
-Read a file using a readable stream and log chunks.
+This assignment demonstrates the use of **Node.js core modules**, building **HTTP-based CRUD APIs**, and understanding **Node.js internals**.
+All tasks are implemented using **pure Node.js**, without external frameworks.
 
-Copy a file using readable and writable streams.
+---
 
-Compress a file using a stream pipeline.
+## 🟢 Part 1: Streams
 
-Part 2: HTTP CRUD APIs
+* Read a file using a **readable stream** and log file chunks.
+* Copy a file using **readable and writable streams**.
+* Compress a file using a **stream pipeline**.
 
-Data is stored in a JSON file using the fs module.
+---
 
-No in-memory arrays are used.
+## 🔵 Part 2: HTTP CRUD APIs
 
-Endpoints
+* Data is stored in a **JSON file** using the `fs` module.
+* No in-memory arrays are used for data management.
 
-POST /user – Add new user (email must be unique)
+### 📌 API Endpoints
 
-PATCH /user/:id – Update user by ID
+* **POST** `/user` → Add new user (email must be unique)
+* **PATCH** `/user/:id` → Update user by ID
+* **DELETE** `/user/:id` → Delete user by ID
+* **GET** `/user` → Get all users
+* **GET** `/user/:id` → Get user by ID
 
-DELETE /user/:id – Delete user by ID
+---
 
-GET /user – Get all users
+## 🟣 Part 3: Node.js Internals
 
-GET /user/:id – Get user by ID
+* Event Loop
+* Libuv
+* Asynchronous operations
+* Call Stack vs Event Queue vs Event Loop
+* Thread Pool and configuration
+* Blocking vs non-blocking code execution
 
-Part 3: Node.js Internals
+---
 
-Event Loop
+## ▶️ Run Project
 
-Libuv
+```bash
+node main.js
+```
 
-Asynchronous operations
+---
 
-Call Stack vs Event Queue vs Event Loop
+## 👤 Author
 
-Thread Pool and configuration
-
-Blocking vs non-blocking code
+**Ahmed Mokhtar**
+GitHub: [https://github.com/ahmedmido-24](https://github.com/ahmedmido-24)
